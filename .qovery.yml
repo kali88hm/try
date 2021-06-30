@@ -1,0 +1,15 @@
+application:
+  name: "ghost"
+  project: "gg"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "ghost-data"
+    size: "5GB"
+    type: "ssd"
+    mount_point: "/var/lib/ghost/content"
+routers:
+- name: "ghost-router"
+  routes:
+  - application_name: "ghost"
+    paths:
+    - "/"

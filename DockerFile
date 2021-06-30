@@ -1,0 +1,3 @@
+FROM node:14
+# EXPOSE 8125
+CMD ["node" , "app.js"]
