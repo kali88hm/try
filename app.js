@@ -36,7 +36,7 @@ http.createServer(function (request, response) {
             if(error.code == 'ENOENT') {
                 fs.readFile('./404.html', function(error, content) {
                     response.writeHead(404, { 'Content-Type': 'text/html' });
-                    response.end(content, 'utf-8');
+                    response.end('<h1>this msg is from server node</h1>', 'utf-8');
                 });
             }
             else {
